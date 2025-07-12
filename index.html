@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lizzy's Foods</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <i class="fas fa-utensils logo-icon"></i>
+        <span><strong>Lizzy's Foods</strong></span>
+      </div>
+      <nav class="nav-links">
+        <a href="#" class="active">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Service</a>
+        <a href="#">Contact</a>
+        <div class="auth-buttons mobile-auth">
+          <a href="#" class="login">Login</a>
+          <a href="#" class="signup">Sign up</a>
+        </div>
+      </nav>
+      <div class="auth-buttons desktop-auth">
+        <a href="#" class="login">Login</a>
+        <a href="#" class="signup">Sign up</a>
+      </div>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars menu-icon"></i>
+        <i class="fas fa-times close-icon"></i>
+      </div>
+    </header>
+
+    <main class="hero">
+      <div class="hero-text">
+        <h1>
+          We Deliver <span class="highlight">Food</span> to <br />
+          Everywhere
+        </h1>
+        <p>
+          We make sure we deliver your food order to you fast wherever you are
+          reaching us from
+        </p>
+        <a href="#" class="cta-btn">Get Started</a>
+      </div>
+      <div class="hero-image">
+        <div class="circle-bg">
+          <img src="hero-image.png" alt="Woman enjoying food" />
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
