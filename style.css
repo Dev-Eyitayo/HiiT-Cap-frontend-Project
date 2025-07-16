@@ -28,7 +28,6 @@ img {
   background: white;
   position: relative;
   flex-wrap: wrap;
-  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
   z-index: 1000;
 }
 
@@ -419,7 +418,7 @@ img {
 }
 
 .menu-section {
-  padding: 40px;
+  padding: 10% 5%;
   text-align: center;
 }
 
@@ -456,8 +455,9 @@ img {
 
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
+  /* grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
 
 .menu-card {
@@ -476,7 +476,7 @@ img {
 .menu-card img {
   width: 100%;
   border-radius: 10px;
-  height: 160px;
+  height: 130px;
   object-fit: cover;
   margin-bottom: 12px;
 }
@@ -501,4 +501,33 @@ img {
   .menu-section h3 {
     font-size: 22px;
   }
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .menu-section {
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  .menu-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu-grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
+  }
+}
+
+.clamped-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
